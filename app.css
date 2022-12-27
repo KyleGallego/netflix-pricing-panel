@@ -243,3 +243,19 @@ body {
     background-color: #ff1c46;
     color: white;
 }
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .plan-type {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 0 13px;
+    }
+
+    .plan-type:last-child {
+        border-right: none;
+    }
+}
