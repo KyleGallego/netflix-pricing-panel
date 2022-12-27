@@ -152,6 +152,7 @@ body {
     min-height: 100vh;
 }
 
+/* This section is for the main container */
 .panel {
     background-color: white;
     border-radius: 10px;
@@ -160,8 +161,85 @@ body {
     width: 100%;
     max-width: 960px;
     /* This means that the element will never be wider than 960 pixels, even if the parent element is wider. */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* This will make all the elements in the panel to be centered */
+    text-transform: uppercase;
 }
 
-img {
-    width: 113px;
+/* This section will configure each plan type containers */
+.plan-type {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.plan-type:last-child {
+    border-bottom: none;
+}
+
+.plan-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+    /* specifies that the element should be 100% of the width of its parent element. This can be used to make the element fill the available space horizontally. */
+}
+
+.plan-title {
+    color: #800f2f;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 50px 0 25px;
+    /* 50px top, 0 left/right, 25px bottom */
+    color: #c9184a;
+}
+
+.pricing-feature-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    /* 15px top/bottom */
+    border-top: 1px solid #e1f1ff;
+}
+
+.pricing-feature-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.plan-price {
+    color: #c9184a;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.plan-price-button {
+    border: 1px solid #ff4d6d;
+    border-radius: 10px;
+    color: #ff8fa3;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.plan-price-button:hover,
+.plan-price-button:focus {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.plan-price-button.is-featured {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.plan-price-button.is-featured:hover,
+.plan-price-button.is-featured:focus {
+    background-color: #ff1c46;
+    color: white;
 }
