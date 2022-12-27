@@ -139,3 +139,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ef233c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
